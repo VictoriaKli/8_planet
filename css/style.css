@@ -181,7 +181,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.header .row .__menu-links nav ul li {
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
 
+.header .row .__menu-links nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
 .header .row .__menu-links .nav .__dopmenu ul li div {
   border: 0px;
 }
