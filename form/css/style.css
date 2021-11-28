@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-------------------------------*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: local("☺"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: local("☺"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?55513132");
+  src: url("../fonts/fontello.eot?55513132#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?55513132") format("woff"), url("../fonts/fontello.ttf?55513132") format("truetype"), url("../fonts/fontello.svg?55513132#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #395060;
+}
+
+.formbox {
+  position: relative;
+  background: url("../img/bg.png") 50%/cover no-repeat;
+  padding: 113px 0px 80px;
+}
+
+.formbox::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #2880c1;
+  opacity: .07;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.formbox .row .formtitle {
+  font-family: 'Open Sans';
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333333;
+  margin: 0px 0px 60px 0px;
+}
+
+.formbox .row form {
+  max-width: 568px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formbox .row form .nameform,
+.formbox .row form .telform,
+.formbox .row form .mailform,
+.formbox .row form .mesform {
+  margin: 0px 0px 30px 0px;
+}
+
+.formbox .row form .nameform input,
+.formbox .row form .nameform textarea,
+.formbox .row form .telform input,
+.formbox .row form .telform textarea,
+.formbox .row form .mailform input,
+.formbox .row form .mailform textarea,
+.formbox .row form .mesform input,
+.formbox .row form .mesform textarea {
+  background: inherit;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.4);
+  width: 568px;
+  color: #395060;
+  font-size: 18px;
+  opacity: .67;
+}
+
+.formbox .row form .mesform textarea {
+  height: 100px;
+  resize: none;
+}
+
+.formbox .row form .robot {
+  margin: 0px 0px 30px 0px;
+}
+
+.formbox .row form .sub input {
+  width: 301px;
+  padding: 30px 105px;
+  background: #2880c1;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #ffffff;
+  margin: 0px 0px 41px 0px;
+}
+
+.formbox .row form .cond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formbox .row form .cond input {
+  margin: 5px 19px 0px 0px;
+}
+
+.formbox .row form .cond .condition {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #395060;
+}
